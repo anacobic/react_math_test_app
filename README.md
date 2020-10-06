@@ -12,7 +12,7 @@ Ova aplikacija je predložak za vježbanje osnovnih matematičkih zadataka i nij
 The sites main content is available in Croatian only. In order to get all the content localized to Croatian please set the language in browser options.
 This application is suggested for basic math exercises and is not consistent with the curriculum.
 
-Install dependencies using > npx create-react-app my-app
+Install dependencies using > npx create-react-app react_math_test_app
 In this case 'my-app' is the project name.
 Initially this command endded up with an error (code 7).
 The soultion in my case was the following command > npm install -g create-react-app
