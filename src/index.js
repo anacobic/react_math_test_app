@@ -56,7 +56,6 @@ class Environment extends React.Component {
       	showEnv: !showEnv,
     	});	
   	}
-
   }
 
   /* Render the environment form and pass state data to the test */
@@ -142,10 +141,10 @@ class MathTasks extends React.Component {
 
   		let text = document.createTextNode( " [ " + taskResult + " ] " );
   		task.parentNode.appendChild(text);
-	});
+		});
 
-	percentOfCorrectAnswers = numOfCorrectAnswers / numberOfTasks * 100;
-	percentOfCorrectAnswers = percentOfCorrectAnswers.toFixed(2);
+		percentOfCorrectAnswers = numOfCorrectAnswers / numberOfTasks * 100;
+		percentOfCorrectAnswers = percentOfCorrectAnswers.toFixed(2);
 
   	this.setState({
       showResult: true,
@@ -164,8 +163,8 @@ class MathTasks extends React.Component {
 			}
 
 			this.setState({
-	      		tasks: tasks
-	    	});
+	      tasks: tasks
+	    });
 		}
 
 		return (
@@ -348,10 +347,10 @@ function generateRandom(lv) {
 	var num = 0;
 
 	if (lv === 2) {
-	    num = Math.floor(Math.random() * 201) - 100;
+	  num = Math.floor(Math.random() * 201) - 100;
 	} else if (lv === 3) {
 		num = Math.floor(Math.random() * 21) - 10
 	}
 
-    return (num === 0) ? generateRandom(lv) : num;
+  return (num === 0) ? generateRandom(lv) : num;
 }
